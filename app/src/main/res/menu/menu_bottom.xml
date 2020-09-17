@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/outline_home_24"
+            android:title="Home"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/nav_tugas"
+            android:icon="@drawable/outline_assignment_24"
+            android:title="Tugas"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/nav_jadwal"
+            android:icon="@drawable/outline_event_24"
+            android:title="Jadwal"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/outline_account_box_24"
+            android:title="About"
+            app:showAsAction="ifRoom"/>
+</menu>

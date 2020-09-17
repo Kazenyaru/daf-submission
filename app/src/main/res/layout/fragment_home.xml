@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewJadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+            android:id="@+id/containerTugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/recyclerViewJadwal"
+            android:layout_marginTop="10dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="List Tugas"
+                android:layout_margin="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTugas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/activity_vertical_margin">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/containerTugas"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true">
+
+        <TextView
+                android:id="@+id/recentTugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Tugas Terakhir"
+                android:textSize="20dp"/>
+        <androidx.cardview.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                app:cardCornerRadius="10dp"
+                app:cardMaxElevation="2dp"
+                app:cardElevation="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_below="@id/recentTugas">
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/tugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:text="Membuat Sesuatu"/>
+
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:paddingTop="8dp"
+                        android:paddingStart="10dp">
+                    <Button
+                            android:id="@+id/mapelTugas"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@drawable/button_round"
+                            android:text="Sebuah Mapel"
+                            android:textColor="#07BB07"
+                            android:textSize="20sp"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp">
+
+                </TableRow>
+                <TableRow android:layout_marginTop="50dp"
+                            android:layout_height="50dp"></TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C9C0C0"
+                            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                            android:text="Tenggat"
+                            android:textSize="20sp"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+                    <TextView
+                            android:id="@+id/tenggat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                            android:textColor="#C9C0C0"
+                            android:textSize="18dp"
+                            android:text="17 Agus 2019"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
